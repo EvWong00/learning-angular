@@ -9,5 +9,16 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+  name = 'Goopy'
+  imgURL = 'https://picsum.photos/id/237/500/500'
+
+  getName() {
+    return this.name
+  }
+
+  changeImage(e: KeyboardEvent) {
+    this.imgURL = (e.target as HTMLInputElement).value
+  }
 
 }
+
