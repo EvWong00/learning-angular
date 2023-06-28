@@ -9,8 +9,9 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  name = 'Goopy'
+  name = 'goopy carbonara'
   imgURL = 'https://picsum.photos/id/237/500/500'
+  currentDate = new Date()
 
   getName() {
     return this.name
@@ -18,6 +19,10 @@ export class AppComponent {
 
   changeImage(e: KeyboardEvent) {
     this.imgURL = (e.target as HTMLInputElement).value
+  }
+
+  logImg(event: string) {
+    console.log(event)
   }
 
 }
