@@ -11,7 +11,21 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'goopy carbonara'
   imgURL = 'https://picsum.photos/id/237/500/500'
+  images = [
+    'https://picsum.photos/id/237/500/500',
+    'https://picsum.photos/id/237/500/500',
+    'https://picsum.photos/id/237/500/500',
+  ]
   currentDate = new Date()
+  cost = 2000
+  temperature = 25.3
+  pizza = {
+    toppings: ['pineapple', 'onion'],
+    size: 'large',
+    
+  }
+  fontSize = 16
+  blueClass = false 
 
   getName() {
     return this.name
